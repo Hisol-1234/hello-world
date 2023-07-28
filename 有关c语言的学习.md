@@ -1,5 +1,5 @@
-关键字：1.数据类型 char - 字符型 short - 短整型 int - 整型 long - 长整型 long long - 更长的整型 float - 单精度浮点数 double - 双精度浮点数
-         所占大小
+# 关键字：  
+1.数据类型 char - 字符型 short - 短整型 int - 整型 long - 长整型 long long - 更长的整型 float - 单精度浮点数 double - 双精度浮点数  
         c语言没有字符串类型，用" "当字符串
        2.
 变量：
