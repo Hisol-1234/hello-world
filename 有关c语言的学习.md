@@ -265,6 +265,7 @@ int main
 	else printf("haha\n")
 }
 //结果不打印任何东西
+//一个常量和一个变量比较时，5 == a的判断写法比a == 5要好，因为5 = a会报错而a = 5不会报错
 ```
 #### 循环结构
 for while do while
