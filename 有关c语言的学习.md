@@ -226,3 +226,45 @@ static是用来修饰变量和函数的
    //static修饰局部变量的时候，局部变量出了作用域，不销毁的，本质上static修饰局部变量的时候，改变了变量的存储位置。static延长了局部变量的生命周期
 //栈区，局部变量，出了出了会销毁
 //静态区，静态变量 ，存储位置变了，影响了变量的生命周期 static延长了变量的生命不周期，和程序的生命周期一样长
+### 结构
+#### 顺序结构
+#### 选择结构
+if switch
+#### 循环结构
+for while do while
+##### if语句
+```c
+if(表达式)
+    语句1;//如果if为真执行语句 a=3也为真
+else
+    语句2;
+//多分支
+int age = 0
+scanf(%d,&age);
+if(age <18)
+    printf();
+else if(age >=18 && age <40)
+    printf();
+else if(age >=40 && age <60)
+    printf();
+else
+    printf();
+//if或else后面如果要跟多条语句，需要使用大括号
+if()
+{
+    printf();
+    printf();
+}
+else
+//else和他离的最近的if匹配
+int main
+{
+    int a =0
+    int b = 2
+    if(a ==1)
+	if(b == 2)
+	    printf("hehe\n")
+	else printf("haha\n")
+}
+//结果不打印任何东西
+```
