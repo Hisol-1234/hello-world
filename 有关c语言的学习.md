@@ -229,9 +229,7 @@ static是用来修饰变量和函数的
 ### 结构
 #### 顺序结构
 #### 选择结构
-if switch
-#### 循环结构
-for while do while
+if switch  
 ##### if语句
 ```c
 if(表达式)
@@ -268,3 +266,5 @@ int main
 }
 //结果不打印任何东西
 ```
+#### 循环结构
+for while do while
