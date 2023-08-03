@@ -267,5 +267,52 @@ int main
 //结果不打印任何东西
 //一个常量和一个变量比较时，5 == a的判断写法比a == 5要好，因为5 = a会报错而a = 5不会报错
 ```
+##### switch语句（适用于多分支）
+switch语句是可以嵌套的，break只会跳出自己所在的switch，不会全跳
+```c
+int main()
+{
+int day = 0;
+scanf("%d", &day);
+switch(day)//<--表达式必须包含整型（字符也是整型）
+{
+case 1://case后必须是整型常量表达式
+	printf("星期1\n");
+case 2:
+	printf("星期2\n");
+	break;//跳转语句（如果输入1结果输出星期1、星期二，如果输入2结果是星期二）
+case 3:
+	printf("星期3\n");
+case 4:
+	printf("星期4\n");
+default://所有的case都不能匹配就转到default
+	printf("err\n")
+	break;
+}
+return 0;
+}
+```
+```c
+int main()
+{
+int day = 0;
+scanf("%d", &day);
+switch(day)//<--表达式必须包含整型
+{
+case 1:
+case 2:
+case 3:
+case 4:
+case 5:
+	printf("工作日\n");
+	break;//break在需要时使用就行了
+case 6:
+case 7:
+	printf("周末\n")
+	break;//switch语句最后一个语句最好加上break
+}
+return 0;
+}
+```
 #### 循环结构
 for while do while
