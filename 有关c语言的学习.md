@@ -316,3 +316,9 @@ return 0;
 ```
 #### 循环结构
 for while do while
+```c
+while()
+{
+    循环语句//只要为真就一直循环
+}
+//while循环里只要碰到break被执行就终止循环，continue被执行会跳过本次循环后面的代码且再次进入循环判断是否循环
