@@ -4,6 +4,14 @@
 * ctrl+先k后c - 注释  ctrl+先k后u - 取消注释  上面工具栏也有，前提要先选中注释
 * \n换行 %d - 打印整型 %c - 打印字符 %s - 打印字符串 %f - 打印float类型数据 %lf - 打印double类型的数据
 * 使用printf需要引用#include <stdio.h>
+* getchar和scanf需要输入缓冲区
+* ```c
+  int ch = 0;
+  while ((ch = getchar())!='\n')
+  {
+  	;
+  }//清空缓存区
+  ```
 ### 关键字：  
 1. 数据类型 char - 字符型 short - 短整型 int - 整型 long - 长整型 long long - 更长的整型 float - 单精度浮点数 double - 双精度浮点数  
 2. c语言没有字符串类型，用" "当字符串  
