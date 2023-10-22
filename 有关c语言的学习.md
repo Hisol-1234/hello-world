@@ -333,6 +333,32 @@ while()
 }
 //while循环里只要碰到break被执行就终止循环，continue被执行会跳过本次循环后面的代码且再次进入循环判断是否循环
 ```
+```c
+//代码1
+#include <stdio.h>
+int main()
+{
+ int ch = 0;
+ while ((ch = getchar()) != EOF)
+       putchar(ch);
+    return 0;
+}
+这里的代码适当的修改是可以用来清理缓冲区的.
+//代码2
+#include <stdio.h>
+int main()
+{
+    char ch = '\0';
+ while ((ch = getchar()) != EOF)
+ {
+     if (ch < '0'|| ch > '9')
+        continue;
+     putchar(ch);
+ }
+ return 0;
+}
+//这个代码的作用是：只打印数字字符，跳过其他字符的、
+```
 #### 指针
 存放指针（地址）的变量就是指针变量，指针就是用来存放地址的  
 不管是什么类型的指针都是在创建指针变量  
